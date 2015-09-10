@@ -1,7 +1,7 @@
 # strung
-[![Build Status](https://travis-ci.org/elidoran/strung.svg?branch=master)](https://travis-ci.org/elidoran/strung)
-[![Dependency Status](https://gemnasium.com/elidoran/strung.png)](https://gemnasium.com/elidoran/strung)
-[![npm version](https://badge.fury.io/js/strung.svg)](http://badge.fury.io/js/strung)
+[![Build Status](https://travis-ci.org/elidoran/node-strung.svg?branch=master)](https://travis-ci.org/elidoran/node-strung)
+[![Dependency Status](https://gemnasium.com/elidoran/node-strung.png)](https://gemnasium.com/elidoran/node-strung)
+[![npm version](https://badge.fury.io/js/node-strung.svg)](http://badge.fury.io/js/node-strung)
 
 Acts as a stream to send a string, gather a string, or both.
 
