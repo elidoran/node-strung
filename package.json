@@ -1,11 +1,19 @@
 {
   "name": "strung",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Acts as a stream to send a string, gather a string, or both.",
   "main": "lib",
   "keywords": [
-    "convert", "string", "stream", "source", "sink", "pipe", "piping",
-    "readable", "writable", "duplex"
+    "convert",
+    "string",
+    "stream",
+    "source",
+    "sink",
+    "pipe",
+    "piping",
+    "readable",
+    "writable",
+    "duplex"
   ],
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "license": "MIT",
@@ -26,8 +34,7 @@
     "mocha": "^2.2.5",
     "through2": "^2.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=0.10"
   }
