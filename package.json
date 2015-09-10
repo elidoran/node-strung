@@ -13,7 +13,11 @@
     "piping",
     "readable",
     "writable",
-    "duplex"
+    "duplex",
+    "io",
+    "input",
+    "output",
+    "memory"
   ],
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "license": "MIT",
