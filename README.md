@@ -16,8 +16,8 @@ Show:
 2. using it as a sink (a Writable collecting string content)
 3. as both a source and a sink at once
 4. getting its class
-5. resetting instance with new string as source
-6. resetting instance with pipe(string)
+5. resetting an instance with a new string (to use as a source)
+6. resetting an instance with `pipe(string)` (to use as a source)
 
 ```coffeescript
 # # Piping out: Strung as a source
@@ -40,10 +40,10 @@ Strung.pipe('some string').pipe(anotherStream)
 Strung = require 'strung'
 # 3b. create a source strung
 sink = Strung()
+# combine 3a and 3b:
+sink = require('strung')()
 # 3c. pipe stream to strung
 anotherStream.pipe sink
-# combine 3b and 3c:
-sink = require('strung')()
 # 3d. get full string from sink
 sink.on 'finish', ->
   console.log 'collected string:',sink.string
