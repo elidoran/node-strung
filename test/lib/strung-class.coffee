@@ -1,13 +1,7 @@
 assert = require 'assert'
 {Strung} = require '../../lib'
 through = require 'through2'
-
-sinker = ->
-  sink = through (chunk, encoding, next) ->
-    sink.string ?= ''
-    sink.string += chunk.toString 'utf8'
-    next()
-  return sink
+sinker = require '../helpers/sinker.coffee'
 
 describe 'test strung *as a class*', ->
 
