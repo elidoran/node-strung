@@ -35,7 +35,7 @@
   "bugs": "http://github.com/elidoran/node-strung/issues",
   "devDependencies": {
     "coffee-script": "^1.10.0",
-    "mocha": "^2.2.5",
+    "mocha": "^2.3.3",
     "through2": "^2.0.0"
   },
   "dependencies": {},
