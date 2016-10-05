@@ -1,6 +1,6 @@
 {
   "name": "strung",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Acts as a stream to send a string, gather a string, or both.",
   "main": "lib",
   "keywords": [
