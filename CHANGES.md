@@ -1,3 +1,7 @@
+1.0.5 - Released 2016/10/04
+
+1. updated deps
+2. DRY scripts in package.json
 
 1.0.4 - Released 2015/09/21
 
