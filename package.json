@@ -24,8 +24,8 @@
   "scripts": {
     "compile": "coffee --bare --compile lib",
     "clean": "rm -rf lib/*.js",
-    "prepublish": "coffee --bare --compile lib",
-    "postpublish": "rm -rf lib/*.js",
+    "prepublish": "npm run compile",
+    "postpublish": "npm run clean",
     "test": "mocha --compilers coffee:coffee-script/register --reporter spec --bail --check-leaks test/lib"
   },
   "repository": {
@@ -34,9 +34,9 @@
   },
   "bugs": "http://github.com/elidoran/node-strung/issues",
   "devDependencies": {
-    "coffee-script": "^1.10.0",
-    "mocha": "^2.3.3",
-    "through2": "^2.0.0"
+    "coffee-script": "^1.11.1",
+    "mocha": "^2.5.3",
+    "through2": "^2.0.1"
   },
   "dependencies": {},
   "engines": {
