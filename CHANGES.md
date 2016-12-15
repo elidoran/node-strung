@@ -1,3 +1,21 @@
+1.1.0 - Released 2016/12/14
+
+1. updated deps
+2. added Nodes 0.12 to 7
+3. explicitly config TravisCI to non-sudo
+4. add code coverage with Istanbul, coffee-coverage, and Coveralls
+5. add `after_success` so TravisCI publishes coverage data to Coveralls
+6. Add Coveralls coverage badge to README
+7. ignore coverage directory for both git and npm publish
+8. add 2016 to the License file
+9. change 'compile' to 'build' in package scripts
+10. add new scripts for various coverage tasks
+11. add a specific script for travis to run because it must clean the JS files after doing `npm install` which calls 'prepublish' which creates the JS files and those are read by the coverage tools.
+12. remove the '.coffee' when requiring the 'sinker.coffee' file
+13. remove all the encoding stuff, instead, let them use `Readable.setEncoding()` and `Writable.setDefaultEncoding()`. Note: this may be a "breaking change" needing a new major version, but, fortunately, no one is using this library except me, and, I never used the `encoding` setting. So, I'm going to just bump the minor version.
+14. explicitly set option `decodeStrings` to `false` to ensure it doesn't change strings to Buffer's
+ 
+
 1.0.5 - Released 2016/10/04
 
 1. updated deps
