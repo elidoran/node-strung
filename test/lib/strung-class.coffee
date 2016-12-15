@@ -1,7 +1,7 @@
 assert = require 'assert'
 {Strung} = require '../../lib'
 through = require 'through2'
-sinker = require '../helpers/sinker.coffee'
+sinker = require '../helpers/sinker'
 
 describe 'test strung *as a class*', ->
 

@@ -1,7 +1,7 @@
 assert = require 'assert'
 strung = require '../../lib'
 through = require 'through2'
-sinker = require '../helpers/sinker.coffee'
+sinker = require '../helpers/sinker'
 
 describe 'test strung *as builder function*', ->
 
@@ -68,6 +68,21 @@ describe 'test strung *as builder function*', ->
         source.pipe sink
         # provide through2 with the source content, and end it at once.
         source.end sourceContent
+
+    describe 'with source content (direct separate writes)', ->
+
+      it 'should contain source content', (done) ->
+
+        input = 'some test input'
+        sink = strung()
+        sink.on 'error', done
+        sink.on 'finish', (error) ->
+          assert.equal sink.string, input
+          done error
+
+        sink.write 'some '
+        sink.write 'test'
+        sink.end ' input'
 
 
   describe 'as *separate* source and sink', ->

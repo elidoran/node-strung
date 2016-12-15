@@ -35,3 +35,16 @@ describe 'test require strung', ->
       {Strung} = require '../../lib'
 
       assert Strung
+
+  describe 'with exported pipe()', ->
+
+    it 'should create a Strung class instance with string', ->
+
+      strung = (require '../../lib').pipe testString
+
+      assert.notEqual typeof(strung), 'function', 'strung should be a class instance'
+      assert.equal strung._source, testString
+
+    it 'should throw an error when a non-string is supplied', ->
+
+      assert.throws (-> (require '../../lib').pipe 12345), /must provide a string to pipe\(\)/
