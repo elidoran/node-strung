@@ -4,3 +4,5 @@ test/
 .git
 .gitignore
 
+coverage/
+.coveralls.yml
