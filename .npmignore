@@ -3,6 +3,6 @@ test/
 .DS_Store
 .git
 .gitignore
-
+docs/
 coverage/
 .coveralls.yml
