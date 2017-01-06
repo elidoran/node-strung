@@ -2,6 +2,7 @@
 
 1. move CoffeeScript README to docs/ and make the main README use JavaScript
 2. add docs/ to .npmingore
+3. update coffee-script dep
 
 1.1.0 - Released 2016/12/14
 
