@@ -1,3 +1,7 @@
+1.1.2 - Released 2017/01/06
+
+1. fix link to other README
+
 1.1.1 - Released 2017/01/06
 
 1. move CoffeeScript README to docs/ and make the main README use JavaScript
