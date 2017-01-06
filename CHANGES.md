@@ -1,3 +1,8 @@
+1.1.1 - Released 2017/01/06
+
+1. move CoffeeScript README to docs/ and make the main README use JavaScript
+2. add docs/ to .npmingore
+
 1.1.0 - Released 2016/12/14
 
 1. updated deps
@@ -14,7 +19,7 @@
 12. remove the '.coffee' when requiring the 'sinker.coffee' file
 13. remove all the encoding stuff, instead, let them use `Readable.setEncoding()` and `Writable.setDefaultEncoding()`. Note: this may be a "breaking change" needing a new major version, but, fortunately, no one is using this library except me, and, I never used the `encoding` setting. So, I'm going to just bump the minor version.
 14. explicitly set option `decodeStrings` to `false` to ensure it doesn't change strings to Buffer's
- 
+
 
 1.0.5 - Released 2016/10/04
 
