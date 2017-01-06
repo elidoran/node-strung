@@ -40,7 +40,7 @@
   "bugs": "http://github.com/elidoran/node-strung/issues",
   "devDependencies": {
     "coffee-coverage": "^1.0.1",
-    "coffee-script": "^1.12.1",
+    "coffee-script": "^1.12.2",
     "coveralls": "^2.11.15",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
