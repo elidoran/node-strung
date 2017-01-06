@@ -6,7 +6,7 @@
 
 Acts as a stream to send a string, gather a string, or both.
 
-[README - CoffeeScript Edition](https://github.com/elidoran/node-strung/blob/master/docs/README.cs.md)
+[README - CoffeeScript Edition](https://github.com/elidoran/node-strung/blob/master/docs/README-CS.md)
 
 
 ## Install
