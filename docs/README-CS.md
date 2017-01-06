@@ -6,11 +6,15 @@
 
 Acts as a stream to send a string, gather a string, or both.
 
+[README - JavaScript 5 Edition](https://github.com/elidoran/node-strung)
+
+
 ## Install
 
 ```sh
 npm install strung --save
 ```
+
 
 ## Usage
 
