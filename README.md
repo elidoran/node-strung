@@ -132,6 +132,20 @@ strung.on('finish', function() {
 
 // 7c. use strung
 strung.pipe(anotherStream).pipe(strung)
+
+
+// ES6 version:
+import Strung from 'strung'
+
+const source = Strung('some string')
+const sink   = Strung()
+
+source.pipe(anotherStream).pipe(sink)
+
+sink.on('finish', () =>
+  console.log(`collected string: ${sink.string}`)
+)
 ```
+
 
 ## MIT License
