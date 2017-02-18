@@ -31,14 +31,14 @@ Show:
 // Piping out: Strung as a source
 
 // 1a. create instance with string to pipe out
-strung = require('strung')('some string')
+var strung = require('strung')('some string')
 
 // 1b. pipe string to another stream
 strung.pipe(anotherStream)
 
 
 // 2a. get strung function to use to create instances
-Strung = require('strung')
+var Strung = require('strung')
 
 // 2b. create an instance with a string and pipe it to another stream
 Strung('some string').pipe(anotherStream)
@@ -50,13 +50,13 @@ Strung.pipe('some string').pipe(anotherStream)
 // Piping in: Strung as a sink
 
 // 3a. get strung function to create an instance
-Strung = require('strung')
+var Strung = require('strung')
 
 // 3b. create a source strung
-sink = Strung()
+var sink = Strung()
 
 // combine 3a and 3b:
-sink = require('strung')()
+var sink = require('strung')()
 
 // 3c. use event to get full string from sink
 sink.on('finish', function() {
@@ -70,7 +70,7 @@ anotherStream.pipe(sink)
 // Both source and sink
 
 // 4a. get instance from function (like 1a)
-strung = require('strung')('some string')
+var strung = require('strung')('some string')
 
 // 4b. use event to get full string from it
 strung.on('finish', function() {
@@ -84,13 +84,13 @@ strung.pipe(anotherStream).pipe(strung)
 // Separate instances for source and sink
 
 // 5a. get function to create instances
-strung = require('strung')
+var strung = require('strung')
 
 // 5b. create a source
-source = strung('some string')
+var source = strung('some string')
 
 // 5c. create a sink
-sink = strung()
+var sink = strung()
 
 // 5d. use event to get full string from sink
 sink.on( 'finish', function() {
@@ -104,19 +104,19 @@ source.pipe(anotherStream).pipe(sink)
 // the Strung class is also exported as a subproperty
 
 // 6a. get class
-Strung = require('strung').Strung
+var Strung = require('strung').Strung
 
 // 6b. create an instance as a source (has a string) (can be a sink, too)
-source = new Strung('some string')
+var source = new Strung('some string')
 
 // 6c. create an instance as a sink (no string)
-sink = new Strung
+var sink = new Strung
 
 
 // Reset strung instance with new string
 
 // 7a. create a strung instance
-strung = require('strung')('some string')
+var strung = require('strung')('some string')
 
 // 7b. use event to continue when it's done:
 strung.on('finish', function() {
