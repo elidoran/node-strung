@@ -1,3 +1,10 @@
+1.1.3 - Released 2017/02/17
+
+1. add missing 'var's
+2. add ES6 example
+3. update deps
+
+
 1.1.2 - Released 2017/01/06
 
 1. fix link to other README
