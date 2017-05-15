@@ -137,8 +137,8 @@ strung.pipe(anotherStream).pipe(strung)
 // ES6 version:
 import Strung from 'strung'
 
-const source = Strung('some string')
-const sink   = Strung()
+const source = new Strung('some string')
+const sink   = new Strung()
 
 source.pipe(anotherStream).pipe(sink)
 
@@ -148,4 +148,4 @@ sink.on('finish', () =>
 ```
 
 
-## MIT License
+## [MIT License](LICENSE)
