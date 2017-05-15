@@ -1,8 +1,12 @@
 *.coffee
-test/
 .DS_Store
 .git
 .gitignore
-docs/
-coverage/
 .coveralls.yml
+
+benchmark/
+build/
+coverage/
+docs/
+examples/
+test/
