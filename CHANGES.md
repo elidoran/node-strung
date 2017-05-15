@@ -4,6 +4,7 @@
 2. reduced scripts to minimal
 3. add scripts for node version testing
 4. update ignore files
+5. fix readme's ES6 example and link to LICENSE directly
 
 ## 1.1.3 - Released 2017/02/17
 
