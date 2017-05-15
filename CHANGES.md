@@ -3,6 +3,7 @@
 1. switched to JS5
 2. reduced scripts to minimal
 3. add scripts for node version testing
+4. update ignore files
 
 ## 1.1.3 - Released 2017/02/17
 
