@@ -25,16 +25,9 @@
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "license": "MIT",
   "scripts": {
-    "build": "coffee --bare --compile --no-header lib/index.coffee",
-    "clean": "rm -rf lib/*.js",
-    "prepublish": "npm run build",
-    "postpublish": "npm run clean",
-    "test": "_mocha --compilers coffee:coffee-script/register --reporter spec --bail --check-leaks test/lib",
-    "coverage": "istanbul cover _mocha -- --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul -R spec test/lib",
-    "publish-coverage": "npm run coverage && cat coverage/lcov.info | coveralls",
-    "coverage-lcov": "istanbul cover _mocha --report lcovonly -- --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul -R spec test/lib",
-    "coverage-clean": "rm -rf ./coverage",
-    "travis": "npm run clean && npm run coverage-lcov"
+    "test": "_mocha --compilers coffee:coffee-script/register --R spec --bail --check-leaks test/lib",
+    "coverage": "istanbul cover _mocha --  --compilers coffee:coffee-script/register -R spec test/lib",
+    "coverage-lcov": "istanbul cover _mocha --report lcovonly --  --compilers coffee:coffee-script/register -R spec test/lib"
   },
   "repository": {
     "type": "git",
@@ -42,7 +35,6 @@
   },
   "bugs": "http://github.com/elidoran/node-strung/issues",
   "devDependencies": {
-    "coffee-coverage": "^2.0.1",
     "coffee-script": "^1.12.6",
     "coveralls": "^2.13.1",
     "istanbul": "^0.4.5",
