@@ -1,3 +1,7 @@
+## 1.1.5 - Released 2017/05/15
+
+1. tweak readme
+
 ## 1.1.4 - Released 2017/05/15
 
 1. switched to JS5
