@@ -1,3 +1,7 @@
+## 1.1.6 - Released 2017/05/26
+
+1. add keywords
+
 ## 1.1.5 - Released 2017/05/15
 
 1. tweak readme
