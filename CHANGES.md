@@ -1,3 +1,10 @@
+## 1.1.7 - Released 2018/02/05
+
+1. update dev deps
+2. remove Travis testing for node 0.10 0.12, and 7, add 8 and 9.
+3. reduce coverage scripts to one and use that in Travis
+4. add 2018 to License
+
 ## 1.1.6 - Released 2017/05/26
 
 1. add keywords
