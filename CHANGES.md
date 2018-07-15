@@ -1,3 +1,9 @@
+## 1.1.8 - Released 2018/07/15
+
+1. remove Gemnasium badge from README
+2. remove node 9, add node 10
+3. update dev deps
+
 ## 1.1.7 - Released 2018/02/05
 
 1. update dev deps
