@@ -1,6 +1,5 @@
 # strung
 [![Build Status](https://travis-ci.org/elidoran/node-strung.svg?branch=master)](https://travis-ci.org/elidoran/node-strung)
-[![Dependency Status](https://gemnasium.com/elidoran/node-strung.png)](https://gemnasium.com/elidoran/node-strung)
 [![npm version](https://badge.fury.io/js/strung.svg)](http://badge.fury.io/js/strung)
 [![Coverage Status](https://coveralls.io/repos/github/elidoran/node-strung/badge.svg?branch=master)](https://coveralls.io/github/elidoran/node-strung?branch=master)
 
