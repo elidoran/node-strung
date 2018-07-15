@@ -32,11 +32,11 @@
   "license": "MIT",
   "scripts": {
     "test": "_mocha --require coffee-script/register --R spec --bail --check-leaks test/lib/*.coffee",
-    "test4": "nave use 4.8 npm test",
-    "test6": "nave use 6.12 npm test",
-    "test8": "nave use 8.9 npm test",
-    "test9": "nave use 9.5 npm test",
-    "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test9",
+    "test4": "nave use 4.9 npm test",
+    "test6": "nave use 6.14 npm test",
+    "test8": "nave use 8.1 npm test",
+    "test10": "nave use 10.6 npm test",
+    "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test10",
     "coverage": "istanbul cover _mocha -- --require coffee-script/register -R spec test/lib/*.coffee"
   },
   "repository": {
@@ -46,14 +46,14 @@
   "bugs": "http://github.com/elidoran/node-strung/issues",
   "devDependencies": {
     "coffee-script": "^1.12.7",
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.2",
     "istanbul": "^0.4.5",
-    "mocha": "^5.0.0",
+    "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.3.0",
     "through2": "^2.0.3"
   },
   "dependencies": {},
   "engines": {
-    "node": ">=0.10"
+    "node": ">=4"
   }
 }
