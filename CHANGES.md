@@ -1,3 +1,11 @@
+## 1.2.0 - Released 2019/01/04
+
+1. drop node 4, add node 11
+2. update deps
+3. renames 'test-all' to 'test'
+4. rewrite as a class
+5. add 2019 to license
+
 ## 1.1.8 - Released 2018/07/15
 
 1. remove Gemnasium badge from README
