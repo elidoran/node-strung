@@ -1,3 +1,10 @@
+## 1.2.1 - Released 2020/05/17
+
+1. drop node 6, 8, 11, add node 12, 14
+2. update deps
+3. add 2020 to license
+4. use "latest" and "stable" with nave commands
+
 ## 1.2.0 - Released 2019/01/04
 
 1. drop node 4, add node 11
