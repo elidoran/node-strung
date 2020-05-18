@@ -4,6 +4,11 @@
 2. update deps
 3. add 2020 to license
 4. use "latest" and "stable" with nave commands
+5. add eslint
+6. use nyc for coverage
+7. new scripts for easy coverage runs and doing coverage once in Travis
+8. use 3 OS's in Travis
+9. use "nvs" instead of "nave" to work with Windows (not quite ready yet, changed Travis matrix)
 
 ## 1.2.0 - Released 2019/01/04
 
