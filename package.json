@@ -7,13 +7,6 @@
     "lib/index.js"
   ],
   "keywords": [
-    "string to stream",
-    "string stream",
-    "stream to string",
-    "stream string",
-    "stream from string",
-    "string from stream",
-    "convert",
     "string",
     "stream",
     "source",
@@ -26,7 +19,8 @@
     "io",
     "input",
     "output",
-    "memory"
+    "memory",
+    "convert"
   ],
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "license": "MIT",
