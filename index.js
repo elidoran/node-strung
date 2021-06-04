@@ -65,13 +65,11 @@ class Strung extends Duplex {
 
   // accumulates what's written into `string`
   _write(chunk, encoding, next) {
-    if ('buffer' === encoding) {
-      this._strings.push(this._decoder.write(chunk))
-    }
-
-    else {
-      this._strings.push(chunk)
-    }
+    this._strings.push(
+      ('buffer' === encoding)
+        ? this._decoder.write(chunk)
+        : chunk
+    )
 
     next()
   }
