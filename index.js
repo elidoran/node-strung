@@ -49,17 +49,16 @@ class Strung extends Duplex {
 
   // read from its source string or send null when it's all sent
   _read(size) {
-
     const source = this._source
+        , start = this._start
 
-    if (!source || (this._start >= source.length)) {
+    if (!source || (start >= source.length)) {
       this.push(null)
     }
 
     else {
-      const end = Math.min(this._start + size, source.length)
-      this.push(source.slice(this._start, end))
-      this._start = end
+      this._start = start + size // move this forward, then it's the 'end' below.
+      this.push(source.slice(start, this._start))
     }
   }
 
