@@ -2,6 +2,7 @@
 
 const { Duplex } = require('stream')
 const { StringDecoder } = require('string_decoder')
+const stringConcat = String.prototype.concat
 
 class Strung extends Duplex {
   constructor(string, encoding) {
@@ -9,6 +10,8 @@ class Strung extends Duplex {
       decodeStrings: false
     })
 
+    // avoid making private state into enumerable/configurable properties.
+    // and make the public state, `string`, into a getter for concat'ing array.
     Object.defineProperties(this, {
       // for Readable
       _source: { value: string, writable: true },
@@ -34,8 +37,7 @@ class Strung extends Duplex {
           // or, if the length of _strings when we cached it was different than now.
           if ((!this._string && (length > 0)) || (this._stringsLength !== length)) {
             this._stringsLength = length // remember when caching.
-            const first = ''
-            this._string = first.concat.apply(first, this._strings)
+            this._string = stringConcat.apply('', this._strings)
           }
 
           return this._string
