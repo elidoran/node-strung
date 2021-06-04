@@ -2,9 +2,9 @@
   "name": "strung",
   "version": "1.2.1",
   "description": "Acts as a stream to send a string, gather a string, or both.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "files": [
-    "lib/index.js"
+    "index.js"
   ],
   "keywords": [
     "string",
