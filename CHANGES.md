@@ -1,3 +1,19 @@
+## 1.3.0 - Released 2021/06/05
+
+1. update deps and change node testing to 10, 12, 14, 16.
+2. switch from mocha to tap
+3. switch back to nave from nvs (nvs is stale, and we're stopping using a windows vm).
+4. back to a single VM in Travis CI due to new restrictions.
+5. add 2021 to license.
+6. rewrite scripts to my newer simplified style.
+7. move `index.js` to root cuz it's the only "lib" file.
+8. update Strung to use new streaming API `_final()` function.
+9. update Strung to use `StringDecoder` to properly handle decoding `Buffer` chunks.
+10. revise Strung to store String chunks in an array and concatenate them when user accesses `strung.string` property (it caches the result, and, invalidates cached result if more is added, in case it's accessed while streaming is still going on).
+11. added more tests for `StringDecoder` and `_final`.
+12. update README with new description, features list, and revised code example.
+
+
 ## 1.2.1 - Released 2020/05/17
 
 1. drop node 6, 8, 11, add node 12, 14
