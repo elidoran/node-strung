@@ -94,7 +94,7 @@ class Strung extends Duplex {
     const tail = this._decoder.end()
 
     if (tail) {
-      this.strings.push(tail)
+      this._strings.push(tail)
     }
 
     done()
