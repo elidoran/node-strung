@@ -1,7 +1,7 @@
 {
   "name": "strung",
   "version": "1.2.1",
-  "description": "Acts as a stream to send a string, gather a string, or both.",
+  "description": "Readable stream to send a string, Writable stream to gather a string, or both.",
   "main": "index.js",
   "files": [
     "index.js"
