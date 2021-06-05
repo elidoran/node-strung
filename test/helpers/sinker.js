@@ -8,7 +8,7 @@ module.exports = function() {
       sink.string = ''
     }
     sink.string += chunk.toString('utf8')
-    return next()
+    next()
   })
   return sink
 };
