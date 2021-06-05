@@ -52,7 +52,7 @@ class Strung extends Duplex {
   // read from its source string or send null when it's all sent
   _read(size) {
     const source = this._source
-        , start = this._start
+        , start = this._start                            // eslint-disable-line
 
     if (!source || (start >= source.length)) {
       this.push(null)
