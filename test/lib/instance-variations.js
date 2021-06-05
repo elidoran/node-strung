@@ -1,54 +1,29 @@
 'use strict'
 
-const assert = require('assert')
+const tap = require('tap')
 
-describe('test require strung', () => {
+const testString = 'test string'
 
-  const testString = 'test string'
+tap.test('require strung', t => {
+  const strung = require('../../index.js')
+  t.equal(typeof strung, 'function', 'w/out args should return builder function')
 
-  describe('without arguments', () => {
-    it('should return builder function', () => {
-      const strung = require('../../lib')
-      assert.equal(typeof strung, 'function', 'strung should be a Function')
-    })
+  let result = strung()
+  t.not(typeof result, 'function', 'strung() should be a class instance')
+
+  result = strung(testString)
+  t.equal(result._source, testString, 'string source arg should be stored for use')
+
+  const {Strung} = strung
+  t.ok(Strung, 'exported builder function should have Strung class property')
+
+  let piping = strung.pipe(testString)
+  t.not(typeof piping, 'function', 'piping should be a class instance')
+  t.equal(piping._source, testString, 'string source arg should be stored for use')
+
+  t.throws(() => {
+    return strung.pipe(12345)
   })
 
-  describe('with empty arguments', () => {
-    it('should return a Strung class instance', () => {
-      var strung;
-      strung = require('../../lib')()
-      assert.notEqual(typeof strung, 'function', 'strung should be a class instance')
-    })
-  })
-
-  describe('with string argument', () => {
-    it('should create a Strung class instance with string', () => {
-      var strung;
-      strung = (require('../../lib'))(testString)
-      assert.equal(strung._source, testString)
-    })
-  })
-
-  describe('with destructuring for class', () => {
-    it('should extract exported class', () => {
-      var Strung;
-      Strung = require('../../lib').Strung;
-      assert(Strung)
-    })
-  })
-
-  describe('with exported pipe()', () => {
-    it('should create a Strung class instance with string', () => {
-      var strung;
-      strung = (require('../../lib')).pipe(testString)
-      assert.notEqual(typeof strung, 'function', 'strung should be a class instance')
-      assert.equal(strung._source, testString)
-    })
-
-    it('should throw an error when a non-string is supplied', () => {
-      assert.throws((() => {
-        return (require('../../lib')).pipe(12345)
-      }), /must provide a string to pipe\(\)/)
-    })
-  })
+  t.end()
 })
