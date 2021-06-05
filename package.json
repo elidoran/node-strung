@@ -25,7 +25,7 @@
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --no-eslintrc -c build/eslint/eslint.js --cache --cache-location build/eslint/cache lib/index.js",
+    "lint": "eslint --no-eslintrc -c build/eslint/eslint.js --cache --cache-location build/eslint/cache index.js",
     "test": "tap test/lib/",
     "test10": "nave use 10 tap --no-coverage test/lib/",
     "test12": "nave use 12 tap --no-coverage test/lib",
